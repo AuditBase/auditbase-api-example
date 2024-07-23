@@ -2,7 +2,7 @@ const axios = require('axios')
 const fs = require('fs')
 
 const HOST = "https://api.auditbase.com/";
-const scan_id = "2341f019-1e7e-491e-8f37-b77f724a381f";
+const scan_id = "Your scan ID here";
 async function get_scan(scan_id) {
   api_key =  process.env.AUDITBASE_API_KEY;
   if (!api_key) {

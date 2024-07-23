@@ -50,7 +50,7 @@ def get_scan_pdf(scan_id):
 
 
 if __name__ == "__main__":
-    scan_id = "2341f019-1e7e-491e-8f37-b77f724a381f"
+    scan_id = "<Your scan id>"
     get_scan(scan_id)
 
 
