@@ -9,7 +9,7 @@ in AUDITBASE_WEBHOOK_URL with scan results after the scan is finished.
 ## Javascript Examples
 First run ```npm install```
 ### Place Scan
-```node examples/solidity/js/placeAiScan.js```
+```node examples/solidity/js/createAiScan.js```
 
 ### View Scan
 In the scan file replace scan_id with the scan_id of the 
@@ -19,7 +19,7 @@ file you wish to view.  Then run
 
 ## Python Examples
 ### Place Scan
-run ```python examples/solidity/python/place_ai_scan.py```
+run ```python examples/solidity/python/create_ai_scan.py```
 
 ### View Scan
 In the scan file replace scan_id with the scan_id of the 

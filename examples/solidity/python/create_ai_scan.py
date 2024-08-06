@@ -26,7 +26,7 @@ def test_v1_ai_scan():
           "name": "ai scan1",
           "files": {"file1.sol": file1, "files2.sol": file2},
           "webhook_url": webhook_url,
-          "scan_type": "cosmos",
+          "scan_type": "solidity",
       }
     }
     
