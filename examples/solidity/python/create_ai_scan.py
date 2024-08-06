@@ -3,7 +3,7 @@ import requests
 from pathlib import Path
 host = "https://api.auditbase.com/"
 
-def test_v1_ai_scan_cosmos():
+def test_v1_ai_scan():
     api_key = os.environ.get('AUDITBASE_API_KEY')
     if not api_key:
         raise(Exception("API_KEY not found.  Please set the API_KEY environment variable."))
@@ -13,8 +13,8 @@ def test_v1_ai_scan_cosmos():
     
     route = "v1/ai-scan/upload"
     url = host + route
-    file1 = Path('contracts/cosmos_example_1.rs').read_text()
-    file2 = Path('contracts/cosmos_example_2.rs').read_text()
+    file1 = Path('contracts/solidity/example_1.sol').read_text()
+    file2 = Path('contracts/solidity/example_2.sol').read_text()
     
     headers = {
         'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ def test_v1_ai_scan_cosmos():
     payload = {
       "params": {
           "name": "ai scan1",
-          "files": {"file1.rs": file1, "files2.rs": file2},
+          "files": {"file1.sol": file1, "files2.sol": file2},
           "webhook_url": webhook_url,
           "scan_type": "cosmos",
       }
@@ -37,4 +37,4 @@ def test_v1_ai_scan_cosmos():
 
 
 if __name__ == "__main__":
-    test_v1_ai_scan_cosmos()
+    test_v1_ai_scan()

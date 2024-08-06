@@ -12,8 +12,8 @@ async function test_v1_ai_scan_cosmos(){
 
     const route = "v1/ai-scan/upload"
     url = host + route
-    const file1 = fs.readFileSync('contracts/cosmos_example_1.rs', 'utf8')
-    const file2 = fs.readFileSync('contracts/cosmos_example_2.rs', 'utf8')
+    const file1 = fs.readFileSync('contracts/cosmos/example_1.rs', 'utf8')
+    const file2 = fs.readFileSync('contracts/cosmos/example_2.rs', 'utf8')
     
     headers = {
         'Content-Type': 'application/json',
